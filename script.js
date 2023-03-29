@@ -5,7 +5,7 @@ var generateBtn = document.querySelector("#generate");
 
 var passwordLengthBool = false;
 var passwordLength;
-var lowercasePassword;
+var lowercasePassword = selectLowercase();
 var uppercasePassword;
 var numbersPassword;
 var specialPassword;
@@ -25,7 +25,6 @@ function selectPasswordLength() {
 /*lowercase allowed prompt*/
 
 function selectLowercase() {
-  var lowercasePassword;
   if (confirm("Lowercase?")) {
     window.alert("Lowercase allowed.")
     return lowercasePassword = true;
@@ -100,7 +99,7 @@ function getRndNum(min, max) {
   return Math.floor(Math.random() * (max-min));
 }
 
-/*
+
 for (i=0; i < passwordLength; i++){
   if (getRndNum(0,4) === 0){
     var lowercaseLetter = lowercaseCharSet[getRndNum(0, lowercaseCharSet.length)];
@@ -121,7 +120,7 @@ for (i=0; i < passwordLength; i++){
     var specialCharacter = specialCharSet[getRndNum(0, specialCharSet.length)];
     return specialCharacter;
   }
-} */
+} 
 
 // Write password to the #password input
 function writePassword() {
