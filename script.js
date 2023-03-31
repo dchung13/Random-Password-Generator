@@ -87,12 +87,6 @@ function generatePassword () {
   selectNumbers();
   selectSpecial();
 
-  console.log(passwordLength);
-  console.log(lowercasePassword);
-  console.log(uppercasePassword);
-  console.log(numbersPassword);
-  console.log(specialPassword);
-
   /*Define character sets*/
   var lowercaseCharSet = "abcdefghijklmnopqrstuvwxyz";
   var uppercaseCharSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
